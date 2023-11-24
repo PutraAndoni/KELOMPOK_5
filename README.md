@@ -5,9 +5,9 @@
 
 5322600025-Raisha Auwliya Luth Najwa Nugroho (Username : raishaauwliya)
 
-5322600026-Ashafieq Fauzan Dianta 
+5322600026-Ashafieq Fauzan Dianta (Username : ashafieq)
 
 
-Nama Project  : 
+Nama Project  :  GridCraft (Splitter Image)
 
-Fitur         :
+Fitur         :  fitur nya mengunggah gambar dan customizable styles

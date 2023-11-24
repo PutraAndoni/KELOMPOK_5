@@ -11,6 +11,6 @@
 
 Nama Project  :  GridCraft (Splitter Image)
 
-Fitur         :  fitur nya mengunggah gambar dan customizable styles
+Fitur         :  Mengunggah gambar dan customizable styles
 
 

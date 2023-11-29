@@ -1,14 +1,14 @@
-.container {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.grid-item{
-    overflow: hidden;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
+#photoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Atur sesuai jumlah kolom grid yang diinginkan */
+    gap: 10px;
 }

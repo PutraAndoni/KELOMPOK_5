@@ -1,89 +1,66 @@
-document.getElementById('generateGrid').addEventListener('click', generateGrid);
+function splitImage() {
+    const input = document.getElementById('image-upload');
+    const outputContainer = document.getElementById('output-container');
+    const splitCount = parseInt(document.getElementById('split-count').value, 10);
 
-function generateGrid() {
-    const files = document.getElementById('fileInput').files;
-    const gridColumns = parseInt(document.getElementById('gridColumns').value);
-
-    if (files.length === 0) {
-        alert('Please select an image.');
+    if (input.files.length === 0) {
+        alert('Please select an image before splitting.');
         return;
     }
 
-    const file = files[0];
+    const file = input.files[0];
     const reader = new FileReader();
 
     reader.onload = function (e) {
-        const img = new Image();
-        img.src = e.target.result;
+        const image = new Image();
+        image.src = e.target.result;
 
-        img.onload = function () {
-            const container = document.getElementById('photoGrid');
-            container.innerHTML = ''; // Clear previous content
+        image.onload = function () {
+            const totalWidth = image.width;
+            const width = totalWidth / splitCount;
+            const height = image.height;
 
-            const width = img.width / gridColumns;
-            const height = img.height / Math.ceil(img.height / width);
+            outputContainer.innerHTML = '';
 
-            for (let row = 0; row < Math.ceil(img.height / height); row++) {
-                for (let col = 0; col < gridColumns; col++) {
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
+            for (let i = 0; i < splitCount; i++) {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
 
-                    canvas.width = width;
-                    canvas.height = height;
+                canvas.width = width;
+                canvas.height = height;
 
-                    ctx.drawImage(
-                        img,
-                        col * width,
-                        row * height,
-                        width,
-                        height,
-                        0,
-                        0,
-                        width,
-                        height
-                    );
+                const startX = i * width;
+                context.drawImage(image, startX, 0, width, height, 0, 0, width, height);
 
-                    container.appendChild(canvas);
-                }
+                const outputImage = new Image();
+                outputImage.src = canvas.toDataURL('image/jpeg');
+
+                const outputDiv = document.createElement('div');
+                outputDiv.classList.add('output-image');
+                outputDiv.appendChild(outputImage);
+
+                outputContainer.appendChild(outputDiv);
             }
 
-            // Show download button
-            document.getElementById('downloadLink').style.display = 'block';
+            // Add download button
+            const downloadButton = document.createElement('button');
+            downloadButton.textContent = 'Download All';
+            downloadButton.addEventListener('click', function () {
+                downloadAllImages(outputContainer);
+            });
+            outputContainer.appendChild(downloadButton);
         };
     };
 
     reader.readAsDataURL(file);
 }
 
-document.getElementById('downloadButton').addEventListener('click', downloadGrid);
-
-function downloadGrid() {
-    const container = document.getElementById('photoGrid');
-    const canvasList = container.getElementsByTagName('canvas');
-
-    const finalCanvas = document.createElement('canvas');
-    const finalCtx = finalCanvas.getContext('2d');
-
-    finalCanvas.width = container.clientWidth;
-    finalCanvas.height = container.clientHeight;
-
-    let offsetX = 0;
-    let offsetY = 0;
-
-    for (const canvas of canvasList) {
-        finalCtx.drawImage(canvas, offsetX, offsetY);
-        offsetX += canvas.width + 10; // 10px gap
-        if (offsetX + canvas.width > finalCanvas.width) {
-            offsetX = 0;
-            offsetY += canvas.height + 10; // 10px gap
-        }
-    }
-
-    // Convert final canvas to data URL
-    const dataURL = finalCanvas.toDataURL();
-
-    // Create a link and trigger the download
-    const downloadLink = document.getElementById('downloadLink');
-    downloadLink.href = dataURL;
-    downloadLink.click();
+function downloadAllImages(container) {
+    const images = container.querySelectorAll('.output-image img');
+    images.forEach((image, index) => {
+        const link = document.createElement('a');
+        link.href = image.src;
+        link.download = `split_image_${index + 1}.jpg`;
+        link.click();
+    });
 }

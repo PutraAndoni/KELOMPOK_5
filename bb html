@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GRID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="upload-container">
+    <input type="file" id="image-upload" accept="image/*">
+    <button onclick="generateGrid()">Generate Grid</button>
+    <a id="download-link" style="display: none;">Download Grid</a>
+</div>
+
+<div id="output-container" class="grid-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

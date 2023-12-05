@@ -1,0 +1,656 @@
+.UI-JARKOM {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.UI-JARKOM .div {
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.UI-JARKOM .overlap {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+}
+
+.UI-JARKOM .rectangle {
+  position: absolute;
+  width: 1920px;
+  height: 963px;
+  top: 117px;
+  left: 0;
+  background-color: #ffc100;
+}
+
+.UI-JARKOM .group {
+  position: absolute;
+  width: 1920px;
+  height: 121px;
+  top: 0;
+  left: 0;
+}
+
+.UI-JARKOM .grid-craft {
+  position: absolute;
+  top: 27px;
+  left: 98px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 800;
+  color: transparent;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper {
+  font-style: italic;
+  color: #fbb03b;
+}
+
+.UI-JARKOM .span {
+  font-style: italic;
+  color: #f15a24;
+}
+
+.UI-JARKOM .text-wrapper-2 {
+  position: absolute;
+  top: 44px;
+  left: 386px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .vector {
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  top: 28px;
+  left: 362px;
+}
+
+.UI-JARKOM .text {
+  position: absolute;
+  top: 392px;
+  left: 175px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .img {
+  position: absolute;
+  width: 512px;
+  height: 582px;
+  top: 249px;
+  left: 1281px;
+}
+
+.UI-JARKOM .group-2 {
+  position: absolute;
+  width: 569px;
+  height: 592px;
+  top: 244px;
+  left: 123px;
+}
+
+.UI-JARKOM .group-3 {
+  position: absolute;
+  width: 324px;
+  height: 196px;
+  top: 606px;
+  left: 240px;
+}
+
+.UI-JARKOM .text-wrapper-3 {
+  position: absolute;
+  top: 298px;
+  left: 206px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #f15a24;
+  font-size: 43.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-4 {
+  position: absolute;
+  width: 396px;
+  height: 158px;
+  top: 401px;
+  left: 210px;
+}
+
+.UI-JARKOM .overlap-group {
+  width: 385px;
+  height: 53px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.UI-JARKOM .upload-an-image-of {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper-4 {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.8px;
+  letter-spacing: 0;
+}
+
+.UI-JARKOM .text-wrapper-5 {
+  font-weight: 700;
+}
+
+.UI-JARKOM .text-wrapper-6 {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #f15a24;
+  font-size: 21.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .overlap-2 {
+  position: absolute;
+  width: 386px;
+  height: 79px;
+  top: 78px;
+  left: 0;
+}
+
+.UI-JARKOM .we-recommendthese {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 21.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper-7 {
+  color: #000000;
+}
+
+.UI-JARKOM .text-wrapper-8 {
+  font-weight: 700;
+  color: #f15a24;
+}
+
+.UI-JARKOM .p {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper-9 {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-5 {
+  position: absolute;
+  width: 168px;
+  height: 145px;
+  top: 628px;
+  left: 314px;
+}
+
+.UI-JARKOM .group-6 {
+  position: absolute;
+  width: 172px;
+  height: 38px;
+  top: 106px;
+  left: 0;
+}
+
+.UI-JARKOM .text-wrapper-10 {
+  position: absolute;
+  top: 0;
+  left: 57px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #f15a24;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.UI-JARKOM .text-wrapper-11 {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.UI-JARKOM .rectangle-2 {
+  position: absolute;
+  width: 99px;
+  height: 99px;
+  top: 0;
+  left: 39px;
+}
+
+.UI-JARKOM .text-wrapper-12 {
+  position: absolute;
+  top: 404px;
+  left: 1033px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #f15a24;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper-13 {
+  position: absolute;
+  top: 512px;
+  left: 1033px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #f15a24;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .overlap-wrapper {
+  position: absolute;
+  width: 457px;
+  height: 58px;
+  top: 286px;
+  left: 735px;
+}
+
+.UI-JARKOM .overlap-3 {
+  position: relative;
+  width: 453px;
+  height: 58px;
+}
+
+.UI-JARKOM .text-wrapper-14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .text-wrapper-15 {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-7 {
+  position: absolute;
+  width: 289px;
+  height: 80px;
+  top: 387px;
+  left: 727px;
+}
+
+.UI-JARKOM .overlap-4 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+}
+
+.UI-JARKOM .group-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-7.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .group-8 {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 9px;
+  left: 10px;
+}
+
+.UI-JARKOM .text-wrapper-16 {
+  top: 10px;
+  left: 26px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 43.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .overlap-5 {
+  width: 80px;
+  height: 80px;
+  left: 203px;
+  position: absolute;
+  top: 0;
+}
+
+.UI-JARKOM .img-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-6.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .text-wrapper-17 {
+  top: 12px;
+  left: 30px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 43.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .overlap-6 {
+  position: absolute;
+  width: 98px;
+  height: 60px;
+  top: 10px;
+  left: 93px;
+}
+
+.UI-JARKOM .group-9 {
+  position: absolute;
+  width: 98px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-5.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .group-10 {
+  position: absolute;
+  width: 78px;
+  height: 41px;
+  top: 10px;
+  left: 10px;
+}
+
+.UI-JARKOM .text-wrapper-18 {
+  position: absolute;
+  top: 13px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 27.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-11 {
+  position: absolute;
+  width: 289px;
+  height: 80px;
+  top: 493px;
+  left: 726px;
+}
+
+.UI-JARKOM .group-12 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-4.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .group-13 {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 10px;
+  left: 10px;
+}
+
+.UI-JARKOM .text-wrapper-19 {
+  top: 12px;
+  left: 26px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 43.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-14 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-3.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .text-wrapper-20 {
+  top: 12px;
+  left: 31px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 43.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .overlap-7 {
+  position: absolute;
+  width: 98px;
+  height: 60px;
+  top: 11px;
+  left: 93px;
+}
+
+.UI-JARKOM .group-15 {
+  position: absolute;
+  width: 98px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-2.png);
+  background-size: 100% 100%;
+}
+
+.UI-JARKOM .group-16 {
+  position: absolute;
+  width: 78px;
+  height: 41px;
+  top: 9px;
+  left: 10px;
+}
+
+.UI-JARKOM .text-wrapper-21 {
+  position: absolute;
+  top: 15px;
+  left: 42px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #fbb03b;
+  font-size: 27.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-17 {
+  position: absolute;
+  width: 274px;
+  height: 3px;
+  top: 609px;
+  left: 735px;
+}
+
+.UI-JARKOM .vector-2 {
+  position: absolute;
+  width: 274px;
+  height: 64px;
+  top: 655px;
+  left: 736px;
+}
+
+.UI-JARKOM .group-18 {
+  position: absolute;
+  width: 182px;
+  height: 30px;
+  top: 671px;
+  left: 783px;
+}
+
+.UI-JARKOM .text-wrapper-22 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .rectangle-3 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 2px;
+  left: 152px;
+}
+
+.UI-JARKOM .vector-3 {
+  position: absolute;
+  width: 274px;
+  height: 64px;
+  top: 762px;
+  left: 736px;
+}
+
+.UI-JARKOM .text-wrapper-23 {
+  position: absolute;
+  top: 777px;
+  left: 784px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UI-JARKOM .group-19 {
+  position: absolute;
+  width: 1611px;
+  height: 47px;
+  top: 1005px;
+  left: 154px;
+}
+
+.UI-JARKOM .rectangle-4 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 783px;
+  left: 936px;
+}
+
+.UI-JARKOM .vector-4 {
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 173px;
+  left: 2219px;
+  object-fit: cover;
+}
+
+.UI-JARKOM .vector-5 {
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  top: 545px;
+  left: 2758px;
+  object-fit: cover;
+}

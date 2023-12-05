@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GRID</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f2f2f2; /* Warna latar belakang */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #upload-container {
+            margin-top: 50px;
+        }
+
+        #output-container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333; /* Warna teks */
+            margin-bottom: 10px;
+        }
+
+        #grid-craft-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc; /* Warna teks Grid Craft */
+        }
+
+        #download-link {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="upload-container">
+    <h1 id="grid-craft-text">Grid Craft</h1>
+    <input type="file" id="image-upload" accept="image/*">
+    <button onclick="generateGrid()">Generate Grid</button>
+    <a id="download-link" style="display: none;">Download Grid</a>
+</div>
+
+<div id="output-container" class="grid-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotation</title>
+    <style>
+        body {
+            background-color: #b8a0a0; /* Warna latar belakang */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #994848; /* Warna latar belakang formulir */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(24, 20, 20, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #e9e4e4; /* Warna teks label */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50; /* Warna latar belakang tombol */
+            color: #7c4343; /* Warna teks tombol */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Warna latar belakang tombol saat dihover */
+        }
+
+        h1 {
+            color: #f5f1f1; /* Warna teks judul */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #ece8e8; /* Warna teks paragraf */
+        }
+    </style>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <h1>Image Rotation</h1>
+        <p>Select an image and specify the rotation degree:</p>
+        <label for="image">Choose an image:</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+        <br>
+        <label for="rotation_degree">Rotation Degree:</label>
+        <input type="number" name="rotation_degree" id="rotation_degree" value="0" min="-360" max="360" step="1">
+        <br>
+        <button type="submit">Rotate Image</button>
+    </form>
+</body>
+</html>
